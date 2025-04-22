@@ -1,0 +1,18 @@
+@use "../abstract/variables";
+
+@font-face {
+    font-family: variables.$police-secondaire;
+    src: url("") format("truetype");
+}
+
+@font-face {
+    font-family: variables.$police-principale;
+    src: url();
+}
+
+@font-face {
+    font-family: variables.$police-accent;
+    src: url();
+}
+
+

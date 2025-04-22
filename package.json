@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w assets/scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NebulusNubium/My-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NebulusNubium/My-Website/issues"
+  },
+  "homepage": "https://github.com/NebulusNubium/My-Website#readme",
+  "dependencies": {
+    "sass": "^1.87.0"
+  }
+}

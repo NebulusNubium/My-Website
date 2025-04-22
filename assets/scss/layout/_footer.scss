@@ -1,0 +1,20 @@
+@use "../abstract/variables";
+@use "../base/base";
+
+.footer{
+    .logo {
+        a img {
+          width: 3.5vw;
+          height: 2em;
+          cursor: pointer;
+          transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+      
+        a:hover img {
+          transform: scale(1.3);
+        }
+      }
+      
+  }
+  
+

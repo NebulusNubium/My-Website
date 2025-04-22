@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Nunito Semi-bold", sans-serif;
+  src: url("") format("truetype");
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url();
+}
+@font-face {
+  font-family: "Dancing Script", cursive;
+  src: url();
+}
+.footer .logo a img {
+  width: 3.5vw;
+  height: 2em;
+  cursor: pointer;
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.footer .logo a:hover img {
+  transform: scale(1.3);
+}
+
+/*# sourceMappingURL=style.css.map */

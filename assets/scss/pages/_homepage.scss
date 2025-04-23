@@ -38,24 +38,48 @@
 }
 
 #resume {
-    margin: 0 5%;
+    margin: 0 8%;
+    padding: 5% 0;
     background-color: variables.$couleur-ivoire;
     .resume-container {
         color: black;
         .resume-imgs {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            margin: 2rem;
+            gap: 6rem;
             .competence {
-                width: 30%;
+                width: 50%;
             }
             .cv {
                display: flex;
                flex-direction: column;
                align-items: center;
+               gap: 1rem;
                .cv-img {
                 width: 40%;
                 img {width: 100%;}
                }
+            }
+        }
+    }
+}
+
+#portfolio {
+    background-color: black;
+    margin: 2rem 5%;
+    .portfolio-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .project-img {
+                width: 80%;
+                img {width: 100%;}
             }
         }
     }

@@ -119,7 +119,8 @@ header .nav-logo #pause {
 }
 
 #resume {
-  margin: 0 5%;
+  margin: 0 8%;
+  padding: 5% 0;
   background-color: #E6E8E6;
 }
 #resume .resume-container {
@@ -127,20 +128,45 @@ header .nav-logo #pause {
 }
 #resume .resume-container .resume-imgs {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 2rem;
+  gap: 6rem;
 }
 #resume .resume-container .resume-imgs .competence {
-  width: 30%;
+  width: 50%;
 }
 #resume .resume-container .resume-imgs .cv {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 #resume .resume-container .resume-imgs .cv .cv-img {
   width: 40%;
 }
 #resume .resume-container .resume-imgs .cv .cv-img img {
+  width: 100%;
+}
+
+#portfolio {
+  background-color: black;
+  margin: 2rem 5%;
+}
+#portfolio .portfolio-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+#portfolio .portfolio-container .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#portfolio .portfolio-container .project .project-img {
+  width: 80%;
+}
+#portfolio .portfolio-container .project .project-img img {
   width: 100%;
 }
 

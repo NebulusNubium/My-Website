@@ -151,6 +151,7 @@ header .nav-logo #pause {
 #portfolio {
   background-color: black;
   margin: 2rem 5%;
+  padding-bottom: 3%;
 }
 #portfolio .portfolio-container {
   display: flex;
@@ -167,6 +168,19 @@ header .nav-logo #pause {
   width: 80%;
 }
 #portfolio .portfolio-container .project .project-img img {
+  width: 100%;
+}
+
+#latest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#latest .contribution, #latest .last-projects {
+  width: 50%;
+}
+#latest .contribution img, #latest .last-projects img {
   width: 100%;
 }
 

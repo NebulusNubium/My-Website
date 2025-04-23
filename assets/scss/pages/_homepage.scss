@@ -68,6 +68,7 @@
 #portfolio {
     background-color: black;
     margin: 2rem 5%;
+    padding-bottom: 3%;
     .portfolio-container {
         display: flex;
         justify-content: center;
@@ -82,5 +83,16 @@
                 img {width: 100%;}
             }
         }
+    }
+}
+
+#latest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .contribution, .last-projects {
+        width: 50%;
+        img {width: 100%;}
     }
 }

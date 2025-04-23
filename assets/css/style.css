@@ -1,15 +1,59 @@
 @font-face {
-  font-family: "Nunito Semi-bold", sans-serif;
-  src: url("") format("truetype");
+  font-family: "Cormorant Bold", sans-serif;
+  src: url("../fonts/Cormorant_Garamond/static/CormorantGaramond-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url();
+  font-family: "Quicksand", sans-serif;
+  src: url("../fonts/Quicksand/static/Quicksand-Regular.ttf");
 }
 @font-face {
-  font-family: "Dancing Script", cursive;
-  src: url();
+  font-family: "Quicksand Light", sans-serif;
+  src: url("../fonts/Quicksand/static/Quicksand-Light.ttf");
 }
+@font-face {
+  font-family: "Crimson Bold", sans-serif;
+  src: url("../fonts/Crimson_Pro/static/CrimsonPro-Bold.ttf");
+}
+body {
+  color: #F8F8F2;
+  margin: 0;
+  text-align: center;
+  background-color: #1B1B1E;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #F8F8F2;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+header .nav-logo .logo {
+  width: 8%;
+  position: fixed;
+}
+header .nav-logo .logo img {
+  width: 100%;
+}
+header .nav-logo #logo-site {
+  right: 85%;
+}
+header .nav-logo #logo-site img {
+  border-radius: 100%;
+}
+header .nav-logo #pause {
+  left: 85%;
+}
+
 .footer .logo a img {
   width: 3.5vw;
   height: 2em;

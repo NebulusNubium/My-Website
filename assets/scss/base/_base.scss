@@ -1,1 +1,14 @@
 @use "../abstract/variables";
+
+body {
+    color: variables.$couleur-text;
+    margin: 0;
+    text-align: center;
+    background-color: variables.$couleur-primaire;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: variables.$couleur-text;
+}

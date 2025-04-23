@@ -2,17 +2,22 @@
 
 @font-face {
     font-family: variables.$police-secondaire;
-    src: url("") format("truetype");
+    src: url("../fonts/Cormorant_Garamond/static/CormorantGaramond-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: variables.$police-principale;
-    src: url();
+    src: url("../fonts/Quicksand/static/Quicksand-Regular.ttf");
+}
+
+@font-face {
+    font-family: variables.$police-light;
+    src: url("../fonts/Quicksand/static/Quicksand-Light.ttf");
 }
 
 @font-face {
     font-family: variables.$police-accent;
-    src: url();
+    src: url("../fonts/Crimson_Pro/static/CrimsonPro-Bold.ttf");
 }
 
 

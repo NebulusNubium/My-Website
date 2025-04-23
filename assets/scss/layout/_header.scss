@@ -1,2 +1,28 @@
 @use "../abstract/variables";
 
+header {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+        }
+    }
+    .nav-logo {
+        .logo {
+            width: 8%;
+            img {width: 100%;}
+            position: fixed;
+        }
+        #logo-site {
+            right: 85%;
+            img {border-radius: 100%;}
+        }
+        #pause {left: 85% ;}
+    }
+}
+

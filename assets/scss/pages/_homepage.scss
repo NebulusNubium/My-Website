@@ -45,6 +45,9 @@
         .resume-imgs {
             display: flex;
             justify-content: space-around;
+            .competence {
+                width: 30%;
+            }
             .cv {
                display: flex;
                flex-direction: column;

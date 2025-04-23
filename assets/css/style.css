@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "Cormorant Bold", sans-serif;
+  font-family: "Cormorant Bold";
   src: url("../fonts/Cormorant_Garamond/static/CormorantGaramond-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand";
   src: url("../fonts/Quicksand/static/Quicksand-Regular.ttf");
 }
 @font-face {
-  font-family: "Quicksand Light", sans-serif;
+  font-family: "Quicksand Light";
   src: url("../fonts/Quicksand/static/Quicksand-Light.ttf");
 }
 @font-face {
-  font-family: "Crimson Bold", sans-serif;
+  font-family: "Crimson Bold";
   src: url("../fonts/Crimson_Pro/static/CrimsonPro-Bold.ttf");
 }
 body {
@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-  font-family: calibri;
+  font-family: "Crimson Bold";
 }
 
 header nav {
@@ -128,6 +128,9 @@ header .nav-logo #pause {
 #resume .resume-container .resume-imgs {
   display: flex;
   justify-content: space-around;
+}
+#resume .resume-container .resume-imgs .competence {
+  width: 30%;
 }
 #resume .resume-container .resume-imgs .cv {
   display: flex;

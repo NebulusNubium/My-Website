@@ -14,9 +14,10 @@ header {
     }
     .nav-logo {
         .logo {
-            width: 8%;
+            width: 5%;
             img {width: 100%;}
             position: fixed;
+            z-index: 2;
         }
         #logo-site {
             right: 85%;

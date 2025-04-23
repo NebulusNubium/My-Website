@@ -48,8 +48,9 @@ header nav ul {
   gap: 3rem;
 }
 header .nav-logo .logo {
-  width: 8%;
+  width: 5%;
   position: fixed;
+  z-index: 2;
 }
 header .nav-logo .logo img {
   width: 100%;
@@ -76,6 +77,17 @@ header .nav-logo #pause {
 
 footer {
   margin-top: 25%;
+  font-family: "Quicksand Light";
+}
+footer .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer .policies {
+  border-left: 2px solid #F8F8F2;
+  margin-left: 1rem;
+  padding-left: 1rem;
 }
 footer .footer .logo-bot {
   display: flex;
@@ -83,7 +95,7 @@ footer .footer .logo-bot {
   gap: 2rem;
 }
 footer .footer .logo-bot .logo {
-  width: 3%;
+  width: 15%;
 }
 footer .footer .logo-bot .logo img {
   width: 100%;
@@ -124,6 +136,7 @@ footer .footer .logo-bot .logo img {
 }
 .flames-container .flames {
   position: absolute;
+  z-index: 1;
   top: 0%;
   width: 30%;
   height: 90%;

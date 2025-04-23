@@ -1,0 +1,8 @@
+@use "variables";
+
+@mixin button {
+    background-color: variables.$couleur-secondaire;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid variables.$couleur-accent;
+}

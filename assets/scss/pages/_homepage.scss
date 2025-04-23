@@ -2,3 +2,58 @@
 @use "../base/base";
 @use "../base/responsive";
 
+#banner {
+    margin-top: 5%;
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        .avatar {
+            width: 20%;
+            margin: 3rem 0;
+            img {width: 100%;
+            border-radius: 100%;}
+        }
+        p {
+            font-size: 32px;
+            margin: 0;
+        }
+    }
+    .flames-container {
+        display: flex;
+        justify-content: space-between;
+        .flames {
+            position: absolute;
+            top: 0%;
+        }
+        .flames.deux {
+            right: 0%;
+        }
+    }
+}
+
+#about {
+    margin: 10rem 33%;
+}
+
+#resume {
+    margin: 0 5%;
+    background-color: variables.$couleur-ivoire;
+    .resume-container {
+        color: black;
+        .resume-imgs {
+            display: flex;
+            justify-content: space-around;
+            .cv {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               .cv-img {
+                width: 40%;
+                img {width: 100%;}
+               }
+            }
+        }
+    }
+}

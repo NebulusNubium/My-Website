@@ -1,3 +1,7 @@
 @use '../abstract/variables' as *;
 @use 'sass:color';
+@use "../abstract/mixins" as *;
 
+.btn {
+    @include button;
+}

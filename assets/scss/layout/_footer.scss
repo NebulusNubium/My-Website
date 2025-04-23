@@ -18,3 +18,17 @@
   }
   
 
+  footer {
+    margin-top: 25%;
+    .footer {
+        .logo-bot {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            .logo {
+                width: 3%;
+                img {width: 100%;}
+            }
+        }
+    }
+}

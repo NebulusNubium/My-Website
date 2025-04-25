@@ -155,8 +155,8 @@ footer .footer .logo-bot .logo img {
 }
 
 #resume {
-  margin: 0 8%;
-  padding: 5% 0;
+  margin: 5% 8%;
+  padding: 3% 0;
   background-color: #E6E8E6;
 }
 #resume .resume-container {
@@ -164,24 +164,34 @@ footer .footer .logo-bot .logo img {
 }
 #resume .resume-container .resume-imgs {
   display: flex;
-  justify-content: space-between;
-  margin: 2rem;
+  justify-content: space-around;
+  margin-top: 10rem;
   gap: 6rem;
 }
-#resume .resume-container .resume-imgs .competence {
-  width: 40%;
+#resume .resume-container .resume-imgs .exp {
+  text-align: start;
+  position: relative;
+  width: 40vw;
+  margin-bottom: 1rem;
 }
-#resume .resume-container .resume-imgs .competence .bar {
-  background: #ddd;
-  border-radius: 10px;
+#resume .resume-container .resume-imgs .exp .exp-label {
+  display: block;
+  margin: 1rem;
+  font-weight: bold;
+  color: #1B1B1E;
+}
+#resume .resume-container .resume-imgs .exp .bar {
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  background-color: gray;
+  border-radius: 0.5rem;
   overflow: hidden;
-  height: 10px;
 }
-#resume .resume-container .resume-imgs .competence .fill {
-  background: #111;
-  width: 0;
+#resume .resume-container .resume-imgs .exp .bar .fill {
   height: 100%;
-  transition: width 1.5s ease;
+  background-color: black;
+  border-radius: inherit;
 }
 #resume .resume-container .resume-imgs .cv {
   display: flex;
@@ -190,18 +200,20 @@ footer .footer .logo-bot .logo img {
   gap: 1rem;
 }
 #resume .resume-container .resume-imgs .cv .cv-img {
-  width: 40%;
+  width: 80%;
 }
 #resume .resume-container .resume-imgs .cv .cv-img img {
   width: 100%;
 }
 
 #portfolio {
-  height: 90vh;
+  background-color: black;
+  margin: 5rem 5%;
+  padding-top: 3rem;
 }
 #portfolio .carroussel-container {
   position: relative;
-  height: 90vh;
+  height: 80vh;
 }
 #portfolio .project {
   position: absolute;
@@ -212,12 +224,11 @@ footer .footer .logo-bot .logo img {
   margin-top: 10rem;
 }
 #portfolio .project .project-img {
-  /* fill the slide area and center the content */
-  width: 100%;
+  width: 80%;
 }
 #portfolio .project .project-img img {
-  /* show whole image and center it */
-  max-width: 100%;
+  width: 100%;
+  border-radius: 15px;
 }
 #portfolio .project.prev {
   transform: translateX(-90%) scale(0.8);
@@ -235,7 +246,7 @@ footer .footer .logo-bot .logo img {
   z-index: 1;
 }
 #portfolio .btn {
-  margin-top: 5rem;
+  margin: 5rem 0;
   width: 10%;
 }
 #portfolio #slide-range {
@@ -248,22 +259,23 @@ footer .footer .logo-bot .logo img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
-#latest .contribution, #latest .last-projects {
-  width: 50%;
+#latest .contribution {
+  width: 70vw;
+  margin-bottom: 2rem;
 }
-#latest .contribution img, #latest .last-projects img {
+#latest .contribution img {
   width: 100%;
 }
 #latest .contribution {
-  opacity: 0.5;
-  scale: 0.6;
+  opacity: 1;
+  scale: 1;
   transition: opacity 1s ease, transform 1s ease;
 }
 #latest .contribution:hover {
   opacity: 1;
-  scale: 1.2;
+  scale: 1;
   transition: 1s;
 }
 

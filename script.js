@@ -51,28 +51,3 @@ document.addEventListener('DOMContentLoaded', () => {
   // show first slide on load
   updateSlides(0);
 });
-
-
-
-
-/* const username = "NebulusNubium"; 
-
-  const repoContainer = document.getElementById("github-projects");
-
-  fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=3`)
-    .then(res => res.json())
-    .then(data => {
-      data.forEach(repo => {
-        const project = document.createElement("div");
-        project.classList.add("repo-card");
-        project.innerHTML = `
-          <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
-          <p>${repo.description || "No description available."}</p>
-        `;
-        repoContainer.appendChild(project);
-      });
-    })
-    .catch(err => {
-      repoContainer.innerHTML = "<p>Unable to fetch projects at the moment.</p>";
-      console.error("GitHub API error:", err);
-    });*/

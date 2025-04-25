@@ -264,6 +264,15 @@ footer .footer .logo-bot .logo img {
     opacity: 0.8;
     z-index: 1;
   }
+  #latest .last-projects {
+    scale: 0.3 !important;
+    opacity: 1 !important;
+  }
+  #latest .contribution {
+    scale: 1.1 !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+  }
 }
 #banner {
   margin-top: 5%;

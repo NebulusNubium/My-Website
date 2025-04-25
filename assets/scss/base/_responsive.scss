@@ -124,4 +124,16 @@
             
         } 
     }
+
+    #latest {
+        .last-projects {
+            scale: 0.3 !important;
+            opacity: 1 !important;
+        }
+        .contribution {
+            scale: 1.1 !important;
+            opacity: 1 !important;
+            margin: 0 !important;
+        }
+    }
 }

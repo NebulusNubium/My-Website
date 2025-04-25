@@ -69,4 +69,17 @@
             width: 100%;
         }
     }
+
+    #resume {
+        .resume-imgs {
+            margin-top: 1rem !important;
+            flex-direction: column;
+            align-items: center;
+            .cv {
+                .btn {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
 }

@@ -4,6 +4,9 @@
 
 #banner {
     margin-top: 5%;
+    .bg-flames {
+        display: none;
+    }
     .banner-container {
         display: flex;
         flex-direction: column;
@@ -164,15 +167,20 @@
         img {width: 100%;}
     }
     //hover & JS prep
-    .contribution, .last-projects {
+    .last-projects {
         opacity: 0.7;
-        scale: 1;
+        scale: 0.6;
         transition: opacity 1s ease, transform 1s ease;
     }
     .contribution:hover, .last-projects:hover{
         opacity: 1;
-        scale: 1.1;
+        scale: 1;
         transition: 1s;
+    }
+    .contribution {
+        opacity: 0.7;
+        scale: 0.9;
+        transition: opacity 1s ease, transform 1s ease;
     }
 }
 

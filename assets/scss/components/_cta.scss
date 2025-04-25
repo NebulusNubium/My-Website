@@ -6,3 +6,6 @@
     @include button;
 }
 
+.btn:hover {
+    background-color: lighten($couleur-secondaire, 20%);
+}

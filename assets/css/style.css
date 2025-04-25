@@ -47,6 +47,39 @@ header nav ul {
   display: flex;
   gap: 3rem;
 }
+header nav ul li {
+  background: transparent;
+}
+header nav ul li a {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+header nav ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff4500 0%, #ff8c00 25%, #ffff00 50%, #ff8c00 75%, #ff4500 100%);
+  background-size: 400% 400%;
+  filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+header nav ul li a:hover {
+  color: #fff;
+}
+header nav ul li a:hover::before {
+  opacity: 1;
+  animation: fireFlicker 2s linear infinite;
+}
 header .nav-logo .logo {
   width: 5%;
   position: fixed;
@@ -65,6 +98,23 @@ header .nav-logo #pause {
   left: 85%;
 }
 
+@keyframes fireFlicker {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  75% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .footer .logo a img {
   width: 3.5vw;
   height: 2em;
@@ -106,6 +156,10 @@ footer .footer .logo-bot .logo img {
   padding: 0.5rem;
   border-radius: 10px;
   border: 1px solid #F28F3B;
+}
+
+.btn:hover {
+  background-color: #f10000;
 }
 
 #banner {
@@ -173,6 +227,7 @@ footer .footer .logo-bot .logo img {
   position: relative;
   width: 40vw;
   margin-bottom: 1rem;
+  padding-left: 1rem;
 }
 #resume .resume-container .resume-imgs .exp .exp-label {
   display: block;
@@ -213,7 +268,7 @@ footer .footer .logo-bot .logo img {
 }
 #portfolio .carroussel-container {
   position: relative;
-  height: 80vh;
+  height: 70vh;
 }
 #portfolio .project {
   position: absolute;
@@ -241,13 +296,13 @@ footer .footer .logo-bot .logo img {
   z-index: 2;
 }
 #portfolio .project.next {
-  transform: translateX(10%) scale(0.4);
+  transform: translateX(50%) scale(0.4);
   opacity: 0.4;
   z-index: 1;
 }
 #portfolio .btn {
-  margin: 5rem 0;
-  margin-top: 10rem;
+  margin: 10rem 0;
+  margin-top: 20rem;
   width: 10%;
 }
 #portfolio #slide-range {

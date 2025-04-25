@@ -324,14 +324,14 @@ footer .footer .logo-bot .logo img {
 #latest .contribution img {
   width: 100%;
 }
-#latest .contribution {
-  opacity: 1;
+#latest .contribution, #latest .last-projects {
+  opacity: 0.7;
   scale: 1;
   transition: opacity 1s ease, transform 1s ease;
 }
-#latest .contribution:hover {
+#latest .contribution:hover, #latest .last-projects:hover {
   opacity: 1;
-  scale: 1;
+  scale: 1.1;
   transition: 1s;
 }
 

@@ -164,14 +164,14 @@
         img {width: 100%;}
     }
     //hover & JS prep
-    .contribution {
-        opacity: 1;
+    .contribution, .last-projects {
+        opacity: 0.7;
         scale: 1;
         transition: opacity 1s ease, transform 1s ease;
     }
-    .contribution:hover{
+    .contribution:hover, .last-projects:hover{
         opacity: 1;
-        scale: 1;
+        scale: 1.1;
         transition: 1s;
     }
 }

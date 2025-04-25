@@ -226,6 +226,44 @@ footer .footer .logo-bot .logo img {
   #resume .resume-imgs .cv .btn {
     font-size: 2rem;
   }
+  #portfolio {
+    margin: 3rem 0 1rem 1rem !important;
+  }
+  #portfolio .btn {
+    margin: 2rem 0 5rem 0 !important;
+    width: 40% !important;
+  }
+  #portfolio .carroussel-container {
+    position: relative;
+  }
+  #portfolio .carroussel-container input {
+    width: 80% !important;
+  }
+  #portfolio .carroussel-container .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scale: 0.4;
+    margin-top: -30%;
+  }
+  #portfolio .carroussel-container .project h3, #portfolio .carroussel-container .project p {
+    display: none;
+  }
+  #portfolio .carroussel-container .project.prev {
+    transform: translateY(-30%) scale(0.4);
+    opacity: 0.8;
+    z-index: 1;
+  }
+  #portfolio .carroussel-container .project.active {
+    transform: translateY(0%) scale(0.7);
+    opacity: 1;
+    z-index: 2;
+  }
+  #portfolio .carroussel-container .project.next {
+    transform: translateY(50%) scale(0.4);
+    opacity: 0.8;
+    z-index: 1;
+  }
 }
 #banner {
   margin-top: 5%;

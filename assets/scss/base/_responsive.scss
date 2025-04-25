@@ -26,6 +26,15 @@
         width: 50%;
         padding-top: 3rem;
     }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    body {
+        font-size: 1rem;
+    }
     #banner {
         position: relative;
         overflow: hidden;
@@ -52,4 +61,12 @@
           z-index: -1;
         }
       }
+
+    #about {
+        width: 90%;
+        margin: 5rem 1rem 10rem 1rem !important;
+        .about-container {
+            width: 100%;
+        }
+    }
 }

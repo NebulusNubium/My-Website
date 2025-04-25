@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="carousel-container">
+    <div class="carousel-cube" id="cube">
+      <div class="face face1"> <img src="assets/img/gaming.png" alt="1"> </div>
+      <div class="face face2"> <img src="assets/img/cv.png"  alt="2"> </div>
+      <div class="face face3"> <img src="assets/img/greenearth.png"  alt="3"> </div>
+    </div>
+  
+    <button class="cube-btn prev">&#10094;</button>
+    <button class="cube-btn next">&#10095;</button>
+  </div>
+  
+  <script>
+    const cube = document.getElementById('cube');
+    let index = 0;
+    const sides = 3;
+  
+    function updateCube() {
+      const angle = index * -120; // 360 / 3 faces = 120 deg
+      cube.style.transform = `rotateY(${angle}deg)`;
+    }
+  
+    document.querySelector('.cube-btn.next').addEventListener('click', () => {
+      index = (index + 1) % sides;
+      updateCube();
+    });
+  
+    document.querySelector('.cube-btn.prev').addEventListener('click', () => {
+      index = (index - 1 + sides) % sides;
+      updateCube();
+    });
+  
+    updateCube(); // Init
+  </script>
+  
+  
+  
+      
+
+</body>
+</html>

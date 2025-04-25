@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/NebulusNubium/My-Website#readme",
   "dependencies": {
+    "puppeteer": "^24.7.1",
     "sass": "^1.87.0"
   }
 }

@@ -121,19 +121,19 @@
       }
   
       &.prev {
-        transform: translateX(-110%) scale(0.6);
+        transform: translateX(-140%) scale(0.4);
         opacity: 0.4;
         z-index: 1;
       }
   
       &.active {
-        transform: translateX(-70%) scale(0.8);
+        transform: translateX(-90%) scale(0.8);
         opacity: 1;
         z-index: 2;
       }
   
       &.next {
-        transform: translateX(30%) scale(0.6);
+        transform: translateX(10%) scale(0.4);
         opacity: 0.4;
         z-index: 1;
       }
@@ -175,45 +175,104 @@
     }
 }
 
-.contact {
-    display: flex;
-    position: relative;
-    .flames-container {
-        display: flex;
-        justify-content: space-between;
+#contact {
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    .contact {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 2rem 0;
+  
+      // ─── Flames ─────────────────────────────────────────────
+      .flames-container {
+        width: 30%;
+        position: relative;
+  
         .flames {
-            position: absolute;
-            top: 0%;
-            width: 25%;
-            height: 50vh;
+          width: 100%;
+          height: 85vh; 
+          overflow: hidden;
+  
+          video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
-        .flames.deux {
-            right: 0%;
+  
+        // second one can be targeted if you need special offsets:
+        &.deux .flames {
+          /* e.g. right: 0; */ 
         }
-    }
-    .contact-container {
+      }
+  
+      // ─── Form ───────────────────────────────────────────────
+      .contact-container {
+        flex: 0 0 50%;      // form takes 60% in the middle
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
         .form-contact {
-            position: absolute;
-            right: 30%;
-            height: 30vh;
-            background-color: variables.$couleur-secondaire;
-            border: 1px solid variables.$couleur-accent;
-            border-radius: 10px;
-            width: 40%;
-            input {
-                margin: 5px;
+          width: 90%;
+          max-width: 800px;           // caps on large screens
+          padding: 2rem;
+          background-color: variables.$couleur-secondaire;
+          border: 1px solid variables.$couleur-accent;
+          border-radius: 10px;
+  
+          form {
+            .form-details {
+              display: flex;
+              flex-direction: column;
+              gap: 1.5rem;
+              box-sizing: border-box;
+  
+              // unify inputs + textarea
+              input[type="text"],
+              input[type="email"],
+              input[type="tel"],
+              textarea {
+                width: 90%;
+                padding: 1rem;
+                font-size: 1.5rem;
                 color: variables.$couleur-accent;
+                background: transparent;
+                border: 1px solid variables.$couleur-accent;
+                border-radius: 5px;
                 font-family: variables.$police-accent;
+              }
+              #message {
+                min-height: 100px;
+              }
+  
+              input[type="submit"] {
+                align-self: center;
+                padding: 0.75rem 2rem;
+                font-size: 1rem;
+                font-weight: bold;
+                color: #fff;
+                background: variables.$couleur-accent;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.2s ease;
+  
+                &:hover {
+                  background: darken(variables.$couleur-accent, 20%);
+                }
+              }
             }
-            #object {
-                width: 90%;
-            }
-            #message {
-                width: 90%;
-                height: 20vh;
-            }
+          }
         }
+      }
     }
-}
+  }
+  
 
 

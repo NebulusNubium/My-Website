@@ -231,17 +231,17 @@ footer .footer .logo-bot .logo img {
   border-radius: 15px;
 }
 #portfolio .project.prev {
-  transform: translateX(-110%) scale(0.6);
+  transform: translateX(-140%) scale(0.4);
   opacity: 0.4;
   z-index: 1;
 }
 #portfolio .project.active {
-  transform: translateX(-70%) scale(0.8);
+  transform: translateX(-90%) scale(0.8);
   opacity: 1;
   z-index: 2;
 }
 #portfolio .project.next {
-  transform: translateX(30%) scale(0.6);
+  transform: translateX(10%) scale(0.4);
   opacity: 0.4;
   z-index: 1;
 }
@@ -280,43 +280,84 @@ footer .footer .logo-bot .logo img {
   transition: 1s;
 }
 
-.contact {
+#contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#contact .contact {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+#contact .contact .flames-container {
+  width: 30%;
   position: relative;
 }
-.contact .flames-container {
+#contact .contact .flames-container .flames {
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+}
+#contact .contact .flames-container .flames video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#contact .contact .flames-container.deux .flames {
+  /* e.g. right: 0; */
+}
+#contact .contact .contact-container {
+  flex: 0 0 50%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
-.contact .flames-container .flames {
-  position: absolute;
-  top: 0%;
-  width: 25%;
-  height: 50vh;
-}
-.contact .flames-container .flames.deux {
-  right: 0%;
-}
-.contact .contact-container .form-contact {
-  position: absolute;
-  right: 30%;
-  height: 30vh;
+#contact .contact .contact-container .form-contact {
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
   background-color: #8B0000;
   border: 1px solid #F28F3B;
   border-radius: 10px;
-  width: 40%;
 }
-.contact .contact-container .form-contact input {
-  margin: 5px;
+#contact .contact .contact-container .form-contact form .form-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-sizing: border-box;
+}
+#contact .contact .contact-container .form-contact form .form-details input[type=text],
+#contact .contact .contact-container .form-contact form .form-details input[type=email],
+#contact .contact .contact-container .form-contact form .form-details input[type=tel],
+#contact .contact .contact-container .form-contact form .form-details textarea {
+  width: 90%;
+  padding: 1rem;
+  font-size: 1.5rem;
   color: #F28F3B;
+  background: transparent;
+  border: 1px solid #F28F3B;
+  border-radius: 5px;
   font-family: "Crimson Bold";
 }
-.contact .contact-container .form-contact #object {
-  width: 90%;
+#contact .contact .contact-container .form-contact form .form-details #message {
+  min-height: 100px;
 }
-.contact .contact-container .form-contact #message {
-  width: 90%;
-  height: 20vh;
+#contact .contact .contact-container .form-contact form .form-details input[type=submit] {
+  align-self: center;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: #F28F3B;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+#contact .contact .contact-container .form-contact form .form-details input[type=submit]:hover {
+  background: rgb(186.6220095694, 92.3588516746, 12.3779904306);
 }
 
 /*# sourceMappingURL=style.css.map */

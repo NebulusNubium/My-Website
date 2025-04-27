@@ -209,6 +209,16 @@ footer .footer .logo-bot .logo img {
   #portfolio .carroussel-container .project img {
     width: 500%;
   }
+  footer {
+    margin-top: 10%;
+    font-family: "Quicksand Light";
+  }
+  footer .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media screen and (max-width: 1150px) {
   #header > nav {

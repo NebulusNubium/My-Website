@@ -51,3 +51,38 @@ document.addEventListener('DOMContentLoaded', () => {
   // show first slide on load
   updateSlides(0);
 });
+
+
+// --- FORMULAIRE DE CONTACT ---
+const formContact = document.querySelector('.form-contact');
+const feedback = document.querySelector('#form-feedback');
+
+formContact.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const nom = document.querySelector('#name').value.trim();
+  const email = document.querySelector('#email').value.trim();
+  const tel = document.querySelector('#phone').value.trim();
+  const message = document.querySelector('#message').value.trim();
+
+  // ✅ Une regex "simple" pour vérifier que l’email ressemble à un email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  const formIsValid =
+    nom && emailRegex.test(email) && tel && message;
+
+  if (formIsValid) {
+    feedback.textContent = "✅ Contract successfully sent!";
+    feedback.style.color = "green";
+    feedback.style.display = "block";
+    formContact.reset();
+
+    setTimeout(() => {
+      feedback.style.display = "none";
+    }, 4000);
+  } else {
+    feedback.textContent = "❌ Please fill in the contract in full.";
+    feedback.style.color = "red";
+    feedback.style.display = "block";
+  }
+});

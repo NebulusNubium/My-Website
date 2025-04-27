@@ -1,8 +1,72 @@
 @use "../abstract/variables";
 
+@media screen and (max-width: 850px) {
+    #portfolio {
+        .carroussel-container {
+            padding: 0 !important;
+            input {
+                width: 80% !important;
+            }
+            .project {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: visible;
+                scale: 1;
+                &.next{                    
+                }
+                img {
+                    width: 900%;
+                }
+            } 
+            
+        } 
+    }
+}
 
-@media screen and (max-width: 400px) {
-    #header>nav { display: none;}
+@media screen and (max-width: 850px) {
+    #header>nav {
+    font-size: 0.8rem;}
+    #header {
+        padding: 1rem;
+        .nav-logo{
+            .logo{
+                top: 10%;
+            }
+        }
+        ul {
+            gap: 0;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    #portfolio {
+        .carroussel-container {
+            padding: 0 !important;
+            input {
+                width: 80% !important;
+            }
+            .project {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &.next{
+                    
+                }
+                img {
+                    width: 500%;
+                }
+            } 
+            
+        } 
+    }
+    
+
+}
+@media screen and (max-width: 1150px) {
+    #header>nav { position: absolute; 
+    left: 25%;
+    top: 0%;}
     .logo {
         width: 9% !important;
     }
@@ -49,11 +113,10 @@
           opacity: 0.3;
           z-index: -1;
         }
-      }
+    }
 
     #about {
-        width: 90%;
-        margin: 5rem 1rem 10rem 1rem !important;
+        width: 80%;
         .about-container {
             width: 100%;
         }
@@ -73,42 +136,15 @@
     }
 
     #portfolio {
-        margin: 3rem 0 1rem 1rem !important;
-        .btn {
-            margin: 2rem 0 5rem 0 !important;
-            width: 40% !important;
-        }
         .carroussel-container {
-            position: relative;
+            padding: 0 !important;
             input {
                 width: 80% !important;
             }
             .project {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                scale: 0.4;
-                margin-top: -30%;
-                h3, p {
-                    display: none;
+                img {
+                    width: 300%;
                 }
-                &.prev {
-                    transform: translateY(-30%) scale(0.4);
-                    opacity: 0.8;
-                    z-index: 1;
-                  }
-              
-                  &.active {
-                    transform: translateY(0%) scale(0.7);
-                    opacity: 1;
-                    z-index: 2;
-                  }
-              
-                  &.next {
-                    transform: translateY(50%) scale(0.4);
-                    opacity: 0.8;
-                    z-index: 1;
-                  }
             } 
             
         } 
@@ -127,17 +163,77 @@
     }
 }
 
-@media screen and (max-width: 1523px) {
-    #header {
-        font-size: 1rem;
+
+@media screen and (max-width: 1500px) {
+    nav {
+        position: relative;
+        z-index: 2;
+    }
+    .logo {
+        width: 9% !important;
+    }
+    .flames-container {
+        width: 20%;
+    }
+    //base
+    h1 {
+        font-size: 2rem;
+        width: 50%;
+        padding-top: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+    body {
+        font-size: 1.5rem;
+    }
+    #about {
+        margin: 10rem 10% !important;
+    }
+
+    #portfolio {
+        .project{
+            &.prev {
+                left: 30%
+            }
+            &.active {
+                left: 30%;
+            }
+            &.next {
+                left: 50%;
+            }
+        }
     }
 }
 
-@media screen and (max-width: 1023px) {
-    
-}
+@media screen and (max-width: 1700px) {
+#portfolio {
 
-
-@media screen and (max-width: 768px) {
-
+    .btn {
+        margin: 5rem 0 5rem 0 !important;
+        width: 40% !important;
+    }
+    .carroussel-container {
+        overflow-x: hidden;
+        padding-bottom: 15rem;
+        input {
+        }
+        .project {
+            scale: 0.8;
+            margin-top: 0%;
+        }
+    }}
+    #portfolio {
+        .project{
+            &.prev {
+                left: 30%
+            }
+            &.next {
+                left: 50%;
+            }
+        }
+    }
 }

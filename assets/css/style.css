@@ -45,7 +45,7 @@ header nav {
 header nav ul {
   list-style: none;
   display: flex;
-  gap: 3rem;
+  gap: 0.5rem;
 }
 header nav ul li {
   background: transparent;
@@ -162,9 +162,59 @@ footer .footer .logo-bot .logo img {
   background-color: #f10000;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 850px) {
+  #portfolio .carroussel-container {
+    padding: 0 !important;
+  }
+  #portfolio .carroussel-container input {
+    width: 80% !important;
+  }
+  #portfolio .carroussel-container .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    scale: 1;
+  }
+  #portfolio .carroussel-container .project img {
+    width: 900%;
+  }
+}
+@media screen and (max-width: 850px) {
   #header > nav {
-    display: none;
+    font-size: 0.8rem;
+  }
+  #header {
+    padding: 1rem;
+  }
+  #header .nav-logo .logo {
+    top: 10%;
+  }
+  #header ul {
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+  #portfolio .carroussel-container {
+    padding: 0 !important;
+  }
+  #portfolio .carroussel-container input {
+    width: 80% !important;
+  }
+  #portfolio .carroussel-container .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #portfolio .carroussel-container .project img {
+    width: 500%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  #header > nav {
+    position: absolute;
+    left: 25%;
+    top: 0%;
   }
   .logo {
     width: 9% !important;
@@ -210,8 +260,7 @@ footer .footer .logo-bot .logo img {
     z-index: -1;
   }
   #about {
-    width: 90%;
-    margin: 5rem 1rem 10rem 1rem !important;
+    width: 80%;
   }
   #about .about-container {
     width: 100%;
@@ -224,43 +273,14 @@ footer .footer .logo-bot .logo img {
   #resume .resume-imgs .cv .btn {
     font-size: 2rem;
   }
-  #portfolio {
-    margin: 3rem 0 1rem 1rem !important;
-  }
-  #portfolio .btn {
-    margin: 2rem 0 5rem 0 !important;
-    width: 40% !important;
-  }
   #portfolio .carroussel-container {
-    position: relative;
+    padding: 0 !important;
   }
   #portfolio .carroussel-container input {
     width: 80% !important;
   }
-  #portfolio .carroussel-container .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    scale: 0.4;
-    margin-top: -30%;
-  }
-  #portfolio .carroussel-container .project h3, #portfolio .carroussel-container .project p {
-    display: none;
-  }
-  #portfolio .carroussel-container .project.prev {
-    transform: translateY(-30%) scale(0.4);
-    opacity: 0.8;
-    z-index: 1;
-  }
-  #portfolio .carroussel-container .project.active {
-    transform: translateY(0%) scale(0.7);
-    opacity: 1;
-    z-index: 2;
-  }
-  #portfolio .carroussel-container .project.next {
-    transform: translateY(50%) scale(0.4);
-    opacity: 0.8;
-    z-index: 1;
+  #portfolio .carroussel-container .project img {
+    width: 300%;
   }
   #latest .last-projects {
     scale: 0.3 !important;
@@ -272,9 +292,62 @@ footer .footer .logo-bot .logo img {
     margin: 0 !important;
   }
 }
-@media screen and (max-width: 1523px) {
-  #header {
-    font-size: 1rem;
+@media screen and (max-width: 1500px) {
+  nav {
+    position: relative;
+    z-index: 2;
+  }
+  .logo {
+    width: 9% !important;
+  }
+  .flames-container {
+    width: 20%;
+  }
+  h1 {
+    font-size: 2rem;
+    width: 50%;
+    padding-top: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  body {
+    font-size: 1.5rem;
+  }
+  #about {
+    margin: 10rem 10% !important;
+  }
+  #portfolio .project.prev {
+    left: 30%;
+  }
+  #portfolio .project.active {
+    left: 30%;
+  }
+  #portfolio .project.next {
+    left: 50%;
+  }
+}
+@media screen and (max-width: 1700px) {
+  #portfolio .btn {
+    margin: 5rem 0 5rem 0 !important;
+    width: 40% !important;
+  }
+  #portfolio .carroussel-container {
+    overflow-x: hidden;
+    padding-bottom: 15rem;
+  }
+  #portfolio .carroussel-container .project {
+    scale: 0.8;
+    margin-top: 0%;
+  }
+  #portfolio .project.prev {
+    left: 30%;
+  }
+  #portfolio .project.next {
+    left: 50%;
   }
 }
 #banner {

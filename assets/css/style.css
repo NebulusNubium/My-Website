@@ -189,7 +189,7 @@ footer .footer .logo-bot .logo img {
   }
   #portfolio .carroussel-container {
     padding: 0 !important;
-    height: 50vh !important;
+    height: 60vh !important;
   }
   #portfolio .carroussel-container input {
     width: 80% !important;
@@ -221,6 +221,9 @@ footer .footer .logo-bot .logo img {
   }
   #portfolio .carroussel-container .project img {
     width: 900%;
+  }
+  #latest .last-projects {
+    scale: 1;
   }
   footer {
     margin-top: 10%;

@@ -163,24 +163,6 @@ footer .footer .logo-bot .logo img {
 }
 
 @media screen and (max-width: 850px) {
-  #portfolio .carroussel-container {
-    padding: 0 !important;
-  }
-  #portfolio .carroussel-container input {
-    width: 80% !important;
-  }
-  #portfolio .carroussel-container .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: visible;
-    scale: 1;
-  }
-  #portfolio .carroussel-container .project img {
-    width: 900%;
-  }
-}
-@media screen and (max-width: 850px) {
   #header > nav {
     font-size: 0.8rem;
   }
@@ -200,6 +182,7 @@ footer .footer .logo-bot .logo img {
   }
   #portfolio .carroussel-container input {
     width: 80% !important;
+    margin: 3rem 0 5rem 0 !important;
   }
   #portfolio .carroussel-container .project {
     display: flex;
@@ -208,6 +191,22 @@ footer .footer .logo-bot .logo img {
   }
   #portfolio .carroussel-container .project img {
     width: 500%;
+  }
+  #portfolio .carroussel-container {
+    padding: 0 !important;
+  }
+  #portfolio .carroussel-container input {
+    width: 80% !important;
+  }
+  #portfolio .carroussel-container .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    scale: 1;
+  }
+  #portfolio .carroussel-container .project img {
+    width: 900%;
   }
   footer {
     margin-top: 10%;

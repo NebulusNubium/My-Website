@@ -1,30 +1,6 @@
 @use "../abstract/variables";
 
 @media screen and (max-width: 850px) {
-    #portfolio {
-        .carroussel-container {
-            padding: 0 !important;
-            input {
-                width: 80% !important;
-            }
-            .project {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                overflow: visible;
-                scale: 1;
-                &.next{                    
-                }
-                img {
-                    width: 900%;
-                }
-            } 
-            
-        } 
-    }
-}
-
-@media screen and (max-width: 850px) {
     #header>nav {
     font-size: 0.8rem;}
     #header {
@@ -45,6 +21,7 @@
             padding: 0 !important;
             input {
                 width: 80% !important;
+                margin: 3rem 0 5rem 0 !important;
             }
             .project {
                 display: flex;
@@ -55,6 +32,27 @@
                 }
                 img {
                     width: 500%;
+                }
+            } 
+            
+        } 
+    }
+    #portfolio {
+        .carroussel-container {
+            padding: 0 !important;
+            input {
+                width: 80% !important;
+            }
+            .project {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: visible;
+                scale: 1;
+                &.next{                    
+                }
+                img {
+                    width: 900%;
                 }
             } 
             

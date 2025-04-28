@@ -221,9 +221,7 @@ footer .footer .logo-bot .logo img {
 }
 @media screen and (max-width: 1150px) {
   #header > nav {
-    position: absolute;
-    left: 25%;
-    top: 0%;
+    display: none;
   }
   .logo {
     width: 9% !important;

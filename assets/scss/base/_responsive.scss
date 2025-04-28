@@ -67,14 +67,10 @@
           justify-content: center;
           align-items: center;
         }
-
     }
-
 }
 @media screen and (max-width: 1150px) {
-    #header>nav { position: absolute; 
-    left: 25%;
-    top: 0%;}
+    #header>nav { display: none;}
     .logo {
         width: 9% !important;
     }

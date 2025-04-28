@@ -79,8 +79,17 @@ header {
   
       #pause {
         left: 85%;
+        .burger {
+          span {color: black;
+            a {
+              color: black;
+            }}
+
+        }
       }
     }
+  }
+  .burger { display: none;
   }
   
   // Flame‐flicker keyframes

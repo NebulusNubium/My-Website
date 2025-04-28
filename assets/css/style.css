@@ -97,6 +97,16 @@ header .nav-logo #logo-site img {
 header .nav-logo #pause {
   left: 85%;
 }
+header .nav-logo #pause .burger span {
+  color: black;
+}
+header .nav-logo #pause .burger span a {
+  color: black;
+}
+
+.burger {
+  display: none;
+}
 
 @keyframes fireFlicker {
   0% {
@@ -179,6 +189,7 @@ footer .footer .logo-bot .logo img {
   }
   #portfolio .carroussel-container {
     padding: 0 !important;
+    height: 10vh !important;
   }
   #portfolio .carroussel-container input {
     width: 80% !important;
